@@ -50,11 +50,11 @@ if not os.path.exists(image_folder):
 # print("Images downloaded and saved in the folder.")
 
 # Define the base URL
-base_url = "https://www.flipkart.com/clothing-and-accessories/blazers-suits-waistcoat-coat/pr?sid=clo%2Cupk&otracker=categorytree&p%5B%5D=facets.ideal_for%255B%255D%3DMen&otracker=nmenu_sub_Men_0_Suits%2C+Blazers+%26+Waistcoats&page="
+base_url = "https://www.flipkart.com/clothing-and-accessories/bottomwear/jeans/men-jeans/pr?sid=clo%2Cvua%2Ck58%2Ci51&otracker=categorytree&otracker=nmenu_sub_Men_0_Jeans&page="
 
 
 # Iterate through page numbers from 5 to 20
-for page_num in range(2, 51):
+for page_num in range(2, 21):
     # Construct the full URL
     url = base_url + str(page_num)
     
