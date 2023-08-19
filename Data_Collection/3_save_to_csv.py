@@ -26,13 +26,13 @@ for index, filename in enumerate(existing_image_filenames, start=1):
 
 # Create a DataFrame from the collected data
 data = {
-    "image_path": image_paths,
-    "caption": descriptions
+    "file_name": image_paths,
+    "text": descriptions
 }
 data_frame = pd.DataFrame(data)
 
 # Save the DataFrame to a CSV file
-csv_filename = "image_descriptions.csv"
+csv_filename = "metadata.csv"
 data_frame.to_csv(csv_filename, index=False)
 
 print("Images renamed and descriptions saved in the CSV file.")
