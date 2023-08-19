@@ -1,0 +1,54 @@
+.genpage-container{
+    width: 100vw;
+    height: 100vh;
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+}
+
+.genpage-dialog-outer{
+    width: 70vw;
+    height: 60vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(46, 231, 252, 0.416);
+    overflow: auto;
+    padding: 20px; 
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.dialog-input{
+    width: 60vw;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 13px;
+    display: flex;
+}
+.dialog-text{
+    margin: 10px;
+    width: 70vw;
+    border-radius: 20px;
+}
+.dialog-btn{
+    margin: 10px;
+    width: 20vw;
+    border-radius: 10px;
+}
+#myImage{
+    width: 450px;
+    height: 450px;
+}
+.loader{
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
