@@ -1,13 +1,14 @@
 .genpage-container{
     width: 100vw;
     height: 100vh;
-    /* margin-top: 10px; */
+    /* top: 50px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color:rgb(255, 255, 255);
     backdrop-filter: blur(5px);
+    position: fixed;
 }
 
 .genpage-dialog-outer{
@@ -41,12 +42,14 @@
     border-radius: 10px;
 }
 #myImage{
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
 }
 .loader{
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
+    margin: 40px;
     border: 1px solid black;
     display: flex;
     align-items: center;

@@ -11,6 +11,8 @@ const useStyle = makeStyles((theme) => ({
 
 function PosterRow({ imgUrls = [] }) {
   const classes = useStyle();
+
+  console.log(imgUrls.length)
   return (
     <Grid container className={classes.component}>
       {imgUrls.map((url, index) => (

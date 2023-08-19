@@ -4,7 +4,7 @@ import React from 'react'
 import './flipgen.css'
 import { Link } from 'react-router-dom'
 import SmartToyIcon from '@mui/icons-material/SmartToy';
-import botimg from '../../assets/bot2.png'
+import botimg from '../../assets/bot3.gif'
 
 export default function FlipGen() { 
 //   const classes=useStyle()
@@ -12,9 +12,7 @@ export default function FlipGen() {
   return (
     <div className='flipgen-container'>
     <Link to='/bot'>
-    {/* <SmartToyIcon /> */}
-    <img src={botimg} style={{heigth: '60px',width:'60px',backgroundImage:'none'}}/>
-      FlipGen
+         <img src={botimg} style={{heigth: '100px',width:'100px',backgroundImage:'none'}}/>
     </Link>
     </div>
   )

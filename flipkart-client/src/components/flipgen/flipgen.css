@@ -1,12 +1,11 @@
 .flipgen-container{
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    height: 100px;
-    width: 100px;
-    background-color: rgb(224, 149, 199);
-    margin: 20px;
-    border-radius: 50%;
+    bottom: 3%;
+    right: 3%;
+    /* height: 100px;
+    width: 100px; */
+    object-fit: "contain";
+    background-color: rgb(77, 245, 245);
+    border-radius: 40%;
     cursor: pointer;
-    padding: 20px;
+    position: fixed;
 }
