@@ -18,7 +18,21 @@
 </picture> Introduction :</h2><i>
 <ul>
   <li>
-    This is a Machine Learning, Deep Learning, and Web-based project. 
+    Fashion Outfit Generator is the AI model based on Fine-tuned Stable Diffusion Model which analyzes user preferences, past purchases, and browsing behavior to suggest personalized fashion outfits and can generate clothing images.
   </li>
 </ul>
 <br>
+
+<div>
+ <h2><picture>
+  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" type="image/webp">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.gif" alt="🌟" width="32" height="32">
+</picture> Proposed Solution :</h2></div>
+<ul>
+  <li> The proposed implementation for our conversational generative AI outfit is based on the innovative utilization of the Stable Diffusion Model. </li>
+  <li>Stable Diffusion is a deep learning, text-to-image model based on diffusion techniques. It is primarily used to generate detailed images conditioned on text     descriptions.</li>
+  <li>Another approach that can be implemented was Generative and Adversarial Neural Networks.
+    But here we preferred stable diffusion because its stability and gradual convergence are critical. </li>
+  </ul>
+<br>
+
