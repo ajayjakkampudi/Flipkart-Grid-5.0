@@ -1,8 +1,7 @@
-import { Button, ButtonGroup, CircularProgress, FormControl, LinearProgress, OutlinedInput} from '@material-ui/core';
+import { Button, CircularProgress, FormControl, OutlinedInput} from '@material-ui/core';
 import React, { useState } from 'react'
 import './GenPage.css'
-import PosterRow from '../../components/PosterRow';
-
+import { query } from '../../api';
 
 const recomendData1=['Men Solid Round Neck Pure Cotton Green T-Shirt', 'Men Solid Silk Blend Straight Kurta', 'Men Striped Round Neck Cotton Blend Maroon, White T-Shirt', 'Men Suit Textured Suit', 'WROGN Zero Men Printed Crew Neck Cotton Blend Black T-Shirt',]
 const recomendData2=['Women Solid Round Neck Pure Cotton Green T-Shirt', 'Women Solid Silk Blend Straight Kurta', 'Women Striped Round Neck Cotton Blend Maroon, White T-Shirt', 'Women Suit Textured Suit', 'WROGN Zero Women Printed Crew Neck Cotton Blend Black T-Shirt',]
@@ -13,19 +12,6 @@ export default function GenPage() {
   const [loading,setLoading] = useState(false)  
   const [pos,setPos]=useState('6')
   let recomendImgUrl=[]
-//   console.log(value)
-  async function query(data) {
-	const response = await fetch(
-		"https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2-1",
-		{
-			headers: { Authorization: "Bearer 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" },
-			method: "POST",
-			body: JSON.stringify(data),
-		}
-	);
-	const result = await response.blob();
-	return result;
-  }
 
   const handleClick=async ()=>{
     setLoading(true)
@@ -64,35 +50,49 @@ export default function GenPage() {
      }))
     //  console.log(recomendImgUrl)
     
-     recomendImgUrl.map((data)=>{
-        const loaderDiv = document.querySelector('.genpage-recomend');
-        const imgElement = document.createElement("img");
-        imgElement.id = "myImage";
-        imgElement.src = data;
-        //  console.log(imgElement.src)
-        loaderDiv.appendChild(imgElement);
-     })
+    const loaderDiv = document.querySelector('.genpage-recomend');
+    let myImageElement = loaderDiv.querySelector('#myImage1');
+    while(myImageElement){
+        myImageElement.remove();
+        myImageElement = loaderDiv.querySelector('#myImage1');
+    }
+
+    recomendImgUrl.map((data)=>{
+      const loaderDiv = document.querySelector('.genpage-recomend');
+      const imgElement = document.createElement("img");
+      imgElement.id = "myImage1";
+      imgElement.src = data;
+      //  console.log(imgElement.src)
+      loaderDiv.appendChild(imgElement);
+    })
+
+    const targetDivPos=loaderDiv.offsetTop;
+    window.scrollTo({
+      top: targetDivPos,
+      behavior: 'smooth' 
+    });
 
   }
 
   return (
     <div className='genpage-container'>
         <h1 className='genpage-header'>
-            Hi! Welcome to FlipGen 
+            <span id='header1'>Flip</span>
+            <span id='header2'>Gen</span> 
         </h1>
-        <p className='genpage-header'>
+        <p className='genpage-desc'>
             Modern Custom Outfit Generator 
         </p>
         <div className='dialog-input'>
             <FormControl className='dialog-text'>
                 <OutlinedInput placeholder={"Enter outfit description"} value={value} onChange={(e)=>setValue(e.target.value)}/>
             </FormControl>
-            <Button onClick={handleClick} className='dialog-btn' variant="contained" disabled={loading}>generate</Button>
+            <Button onClick={handleClick} className='dialog-btn' variant="contained" disabled={loading} color='primary'>generate</Button>
         </div>
         <div className='loader'>
         {loading?<CircularProgress size={80}/>:<div></div>}
         </div>
-        <Button onClick={handleRecomend}>More Recommendations</Button>
+        <Button onClick={handleRecomend} variant="contained" disabled={loading} color='primary'>More Recommendations</Button>
         <div className='genpage-recomend'></div>
     </div>
   )

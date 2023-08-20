@@ -1,17 +1,27 @@
 .genpage-container{
-    width: 100vw;
-    height: 100vh;
-    /* top: 50px; */
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:rgb(255, 255, 255);
-    backdrop-filter: blur(5px);
-    position: fixed;
+    background-color:rgba(255, 255, 255, 0.332);
 }
-
+.genpage-header{
+    margin-top: 20px;
+    font-size: 50px;
+}
+.genpage-desc{
+    margin: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+#header2{
+    color: rgb(255, 229, 0)
+}
 .genpage-dialog-outer{
+    position: relative;
     width: 70vw;
     height: 60vh;
     margin-top: 20px;
@@ -28,30 +38,49 @@
     margin: 5px;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 13px;
+    padding: 10px;
     display: flex;
 }
 .dialog-text{
     margin: 10px;
     width: 70vw;
-    border-radius: 20px;
+    background-color: rgb(203, 232, 253);
 }
 .dialog-btn{
     margin: 10px;
     width: 20vw;
     border-radius: 10px;
+    color: rgb(0, 219, 219);
 }
 #myImage{
     width: 250px;
     height: 250px;
     object-fit: contain;
+    margin: 10px;
 }
-.loader{
+#myImage1{
     width: 250px;
     height: 250px;
+    object-fit: contain;
+    margin: 10px;
+    border: 3px solid black;
+}
+.loader{
+    min-height: 250px;
+    min-width: 250px;
     margin: 40px;
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.genpage-recomend{
+    width: 100vw;
+    padding: 10px;
+    height: auto;
+    margin:0 auto;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }

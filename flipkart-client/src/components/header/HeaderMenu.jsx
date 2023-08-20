@@ -58,18 +58,12 @@ function HeaderMenu() {
   
   return (
     <Box className={classes.headerMenu}>
-        <Button
-          variant="contained"
-          style={{ backgroundColor: "#fff" }}
-          className={classes.login_btn}
-        >
-        Login
-        </Button>
+        <h3>Soumya</h3>
 
-      <Link to="/more">
+      <Link to="/orders">
         <Box className={classes.menu_link}>
-          <Typography className={classes.menu_more}>More</Typography>
-          <ExpandMoreIcon />
+          <Typography className={classes.menu_more}>Orders</Typography>
+          {/* <ExpandMoreIcon /> */}
         </Box>
       </Link>
       <Link to="/cart">
