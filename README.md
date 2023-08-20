@@ -33,6 +33,30 @@
   <li>Stable Diffusion is a deep learning, text-to-image model based on diffusion techniques. It is primarily used to generate detailed images conditioned on text     descriptions.</li>
   <li>Another approach that can be implemented was Generative and Adversarial Neural Networks.
     But here we preferred stable diffusion because its stability and gradual convergence are critical. </li>
-  </ul>
+</ul>
 <br>
+
+<h2>ScreenShots</h2>
+<ul>
+   <li>
+       Integration of generator with Flipkart Website
+       <br/>
+       <br/>
+       <img src="./ScreenShots/Integrated the Flipgen bot.png" alt="🌟" width="800" height="400">
+   </li>
+   <br/>
+   <li>
+       FlipGen UI
+       <br/>
+       <br/>
+       <img src="./ScreenShots/flipgen.PNG" alt="🌟" width="800" height="400">
+   </li>
+   <br/>
+   <li>
+       Recommendations Feature
+       <br/>
+       <br/>
+       <img src="./ScreenShots/recommendation.PNG" alt="🌟" width="800" height="400">
+   </li>
+</ul>
 
