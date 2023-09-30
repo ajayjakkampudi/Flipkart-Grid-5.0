@@ -7,7 +7,7 @@
   - [Harshit Singh](https://github.com/harshiitsingh)
 
 ## Problem Statement: Conversational Fashion Outfit Generator powered by GenAI
-  - Create a Gen AI-powered fashion outfit generator for Flipkart that revolutionizes how users discover and create personalized fashion outfits, in a natural conversational way.
+  - Create a Generative AI-powered fashion outfit generator for Flipkart that revolutionizes how users discover and create personalized fashion outfits, in a natural conversational way.
   - The fashion outfit generator should be able to analyze a user's past purchase history and understand their preferred style, color choices, and favorite brands. By considering these preferences, the generator should suggest outfits that align with the user's unique fashion taste.
   - The fashion outfit generator should tap into social media trends to provide up-to-date fashion recommendations. It should be able to analyze current fashion trends, styles, and influencers on platforms like Instagram, Pinterest, and fashion blogs. By combining this data with the user's preferences, the generator can suggest outfits that are not only personalized but also in line with the latest fashion trends.
 
